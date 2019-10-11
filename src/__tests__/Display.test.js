@@ -13,6 +13,5 @@ afterEach(rtl.cleanup);
 */
 
 test("Display is rendered", () => {
-   const display = rtl.render(<Display />);
-   expect(display).toBeDefined(null);
+   expect(false).toBe(true);
 });
