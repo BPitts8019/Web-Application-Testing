@@ -1,12 +1,12 @@
 import React from "react";
 
-function Dashboard ({increaseStrikes}) {
+function Dashboard ({handleStrikes, handleBalls, handleFouls, handleHits}) {
    return (
       <div data-testid="dashboard">
-         <button onClick={increaseStrikes}>Strike</button>
-         <button>Ball</button>
-         <button>Foul</button>
-         <button>Hit</button>
+         <button onClick={handleStrikes}>Strike</button>
+         <button onClick={handleBalls}>Ball</button>
+         <button onClick={handleFouls}>Foul</button>
+         <button onClick={handleHits}>Hit</button>
       </div>
    );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import * as rtl from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import App from '../App';
+import Display from "../components/Display.js";
 afterEach(rtl.cleanup);
 
 /*
@@ -13,5 +13,6 @@ afterEach(rtl.cleanup);
 */
 
 test("Display is rendered", () => {
-   expect(false).toBe(true);
+   const dashboard = rtl.render(<Display />);
+   dashboard.getByTestId("display");
 });
