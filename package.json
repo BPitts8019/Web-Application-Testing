@@ -10,8 +10,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --no-watchman --watchAll=false",
-    "testWatchAll": "react-scripts test --watchAll",
+    "test": "react-scripts test",
+    "testNoWatch": "react-scripts test --no-watchman --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
